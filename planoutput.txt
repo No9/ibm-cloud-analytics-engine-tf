@@ -22,8 +22,8 @@
                 }
               + instance_home   = {
                   + endpoint        = "https://s3.direct.eu-de.cloud-object-storage.appdomain.cloud"
-                  + hmac_access_key = "f175df9e91604862904f826f2019c74e"
-                  + hmac_secret_key = "b14d803f4952a91151af2328aed57dd4313ea653e7e6fa18"
+                  + hmac_access_key = "DEADKEY"
+                  + hmac_secret_key = "DEADSECRET"
                   + region          = "eu-de"
                 }
             }
