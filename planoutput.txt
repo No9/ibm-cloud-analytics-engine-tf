@@ -1,0 +1,67 @@
+  + resource "ibm_resource_instance" "instance" {
+      + account_id              = (known after apply)
+      + allow_cleanup           = (known after apply)
+      + created_at              = (known after apply)
+      + created_by              = (known after apply)
+      + crn                     = (known after apply)
+      + dashboard_url           = (known after apply)
+      + deleted_at              = (known after apply)
+      + deleted_by              = (known after apply)
+      + extensions              = (known after apply)
+      + guid                    = (known after apply)
+      + id                      = (known after apply)
+      + last_operation          = (known after apply)
+      + location                = "eu-de"
+      + locked                  = (known after apply)
+      + name                    = "example-serverless-spark-instance"
+      + parameters_json         = jsonencode(
+            {
+              + default_config  = {}
+              + default_runtime = {
+                  + spark_version = "3.1"
+                }
+              + instance_home   = {
+                  + endpoint        = "https://s3.direct.eu-de.cloud-object-storage.appdomain.cloud"
+                  + hmac_access_key = "f175df9e91604862904f826f2019c74e"
+                  + hmac_secret_key = "b14d803f4952a91151af2328aed57dd4313ea653e7e6fa18"
+                  + region          = "eu-de"
+                }
+            }
+        )
+      + plan                    = "standard-serverless-spark"
+      + plan_history            = (known after apply)
+      + resource_aliases_url    = (known after apply)
+      + resource_bindings_url   = (known after apply)
+      + resource_controller_url = (known after apply)
+      + resource_crn            = (known after apply)
+      + resource_group_crn      = (known after apply)
+      + resource_group_id       = (known after apply)
+      + resource_group_name     = (known after apply)
+      + resource_id             = (known after apply)
+      + resource_keys_url       = (known after apply)
+      + resource_name           = (known after apply)
+      + resource_plan_id        = (known after apply)
+      + resource_status         = (known after apply)
+      + restored_at             = (known after apply)
+      + restored_by             = (known after apply)
+      + scheduled_reclaim_at    = (known after apply)
+      + scheduled_reclaim_by    = (known after apply)
+      + service                 = "ibmanalyticsengine"
+      + service_endpoints       = (known after apply)
+      + state                   = (known after apply)
+      + status                  = (known after apply)
+      + sub_type                = (known after apply)
+      + tags                    = [
+          + "my-tag",
+        ]
+      + target_crn              = (known after apply)
+      + type                    = (known after apply)
+      + update_at               = (known after apply)
+      + update_by               = (known after apply)
+
+      + timeouts {
+          + create = "30m"
+          + delete = "15m"
+          + update = "15m"
+        }
+    }
