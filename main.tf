@@ -1,8 +1,10 @@
 resource "ibm_resource_instance" "instance" {
-  name            = "example-serverless-spark-instance"
-  plan            = "standard-serverless-spark"
-  location        = "eu-de"
-  service         = "ibmanalyticsengine"
+  name     = "example-serverless-spark-instance"
+  plan     = "standard-serverless-spark"
+  location = "eu-de"
+  service  = "ibmanalyticsengine"
+  # Depending on where you put this you may want to assign the resource group differently
+  # resource_group_name = module.cs_resource_group.name
   parameters_json = <<PARAMETERS_JSON
   {
   "default_runtime": {
